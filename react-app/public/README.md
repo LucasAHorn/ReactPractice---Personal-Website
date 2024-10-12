@@ -1,1 +1,0 @@
-This folder has all the public facing images etc

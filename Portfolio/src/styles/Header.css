@@ -1,0 +1,15 @@
+span {
+    align-items: center;
+    background-color: blue;
+    color: palegoldenrod;
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+
+
+h2 {
+    align-self: right;
+}
