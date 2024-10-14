@@ -1,18 +1,19 @@
 import "../styles/Header.css";
 
-function Header() {
+function Header(props: any) {
 
-    function goToSection() {
-
+    function goToSection(PageSectionLocations: any) {
+        console.log("clicked on a section");
     };
 
 
     return (
-        <span className="headerOptions">
-            <h2 onClick={() => goToSection()}>About Me</h2>
-            <h2 onClick={() => goToSection()}>Portfolio</h2>
-            <h2 onClick={() => goToSection()}>Contact Me</h2>
-        </span>
+        <div className="Header">
+            <h2 className="PageSections" onClick={() => goToSection(props.PageSectionLocations[0])}>Home</h2>
+            <h2 className="PageSections" onClick={() => goToSection(props.PageSectionLocations[1])}>About</h2>
+            <h2 className="PageSections" onClick={() => goToSection(props.PageSectionLocations[2])}>Portfolio</h2>
+            <h2 className="PageSections" onClick={() => goToSection(props.PageSectionLocations[3])}>Contact</h2>
+        </div>
     );
 }
 export default Header;

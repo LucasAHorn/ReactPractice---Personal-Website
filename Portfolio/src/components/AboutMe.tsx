@@ -1,9 +1,13 @@
+import "../styles/AboutMe.css"
+
 function AboutMe() {
 
-    return (<>
-    
-        <h1>AboutMe</h1>
+    return (
+        <div>
+        
+            <h1>AboutMe</h1>
 
-    </>);
+        </div>
+    );
 }
 export default AboutMe;
