@@ -4,8 +4,16 @@ function AboutMe() {
 
     return (
         <div>
-        
-            <h1>AboutMe</h1>
+
+            <div className="AboutMeLeftSide">
+                <h1>AboutMe</h1>
+                <p>This is text describing me</p>
+
+            </div>
+            <div className="AboutMeRightSide">
+                <img src="../assets/aboutMe.jpeg" />
+
+            </div>
 
         </div>
     );
