@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import "../styles/Landing.css";
 
 // Make the same landing area as lucasahorn.github.io
@@ -63,15 +62,15 @@ function Landing() {
         <div className="Centered">
             <h1>Lucas Horn</h1>
             <p>Iowa State University Class of 2027<br />Pursuing a bachelors of Software Engineering</p>
-            <h3 id="LandingChangingText"></h3>
+
+            <b className="ChangingText">Programming</b>
+            <b className="ChangingText">Personal Projects</b>
+            <b className="ChangingText">Hackathons</b>
+            <b className="ChangingText">Club Involvement</b>
+            <b className="ChangingText">Unicorn wrangler</b>
+            <b className="ChangingText">That was a lie</b>
         </div>
     </div>
-    // <b class="is-visible">Programming</b>
-    // <b>Personal Projects</b>
-    // <b>Hackathons</b>
-    // <b>Club Involvement</b>
-    // <b>Unicorn wrangler</b>
-    // <b>That was a lie</b>
     );
 }
 export default Landing;
