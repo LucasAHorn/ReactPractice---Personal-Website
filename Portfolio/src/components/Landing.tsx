@@ -4,71 +4,26 @@ import "../styles/Landing.css";
     // (This has a background image with changing text)
         // To change the text break the string into a char array or use the horizontal slide feature for block elements
 
+// TODO: make the initial text similar to Alex
+
 
 function Landing() {
-    const ArrayOfTextOptions : string[] = ["Apple", "Bapple", "bineappleslaldkjf lanf"];
-    // const [changingDescription, setChangingDesctipton] = useState(document.getElementById('LandingChangingText')?.innerHTML);
-    const changingDescriptionHTML = document.getElementById('LandingChangingText');
-
-    // function addText(newString : string) {
-    //     for (let index = 1; index < newString.length; index++) {
-    //         setChangingDesctipton(newString.substring(0, index));
-    //         new Promise(f => setTimeout(f, 10000));
-    //     }
-    // }
-
-    // function removeText() {
-    //     if (!changingDescription) {return;}
-    //     while (changingDescription.length > 0){
-    //         setChangingDesctipton(changingDescription.substring(0, changingDescription.length - 1));
-    //         new Promise(f => setTimeout(f, 10000));           
-    //     }
-    // }
-
-    // does not run cuz its a forever loop
-    // async function changingTextRunner() {
-    //     while (true) {
-
-    //         console.log("Fn started");
-
-    //         for (let index = 0; index < ArrayOfTextOptions.length; index++) {
-    //             console.log(index);
-    //             new Promise(f => setTimeout(f, 5000));
-
-
-    //             // new Promise(f => setTimeout(f, 3000));
-    //             // addText(ArrayOfTextOptions[index]);
-    //             // new Promise(f => setTimeout(f, 3000));
-    //             // removeText();
-    //         }
-    //     }
-    // }
-
-    console.log("Cheese");
-    if (changingDescriptionHTML){
-        changingDescriptionHTML.innerHTML = "cheeser";
-    }
-    // changingTextRunner();
-
-    // TODO: remove the below text, its for testing
-    // const [counterNum, setCounterNum] = useState(0);
-    // useEffect(() => {
-    //     setChangingDesctipton(counterNum + "");
-    //     // setCounterNum(counterNum + 1);
-    // })
-
     return (
     <div className="LandingContent">
         <div className="Centered">
-            <h1>Lucas Horn</h1>
-            <p>Iowa State University Class of 2027<br />Pursuing a bachelors of Software Engineering</p>
+            <h1 className="LandingName">Lucas Horn</h1>
+            <p className="LandingDescription">Iowa State University Class of 2027<br />Pursuing a bachelors of Software Engineering</p>
+            <br /><br /><br />
 
-            <b className="ChangingText">Programming</b>
-            <b className="ChangingText">Personal Projects</b>
-            <b className="ChangingText">Hackathons</b>
-            <b className="ChangingText">Club Involvement</b>
-            <b className="ChangingText">Unicorn wrangler</b>
-            <b className="ChangingText">That was a lie</b>
+
+            <div className="HorizontallyAligned">
+                <p className="ChangingText">Personal Projects</p>
+                <p className="ChangingText">Hackathons</p>
+                <p className="ChangingText">Club Involvement</p>
+                <p className="ChangingText">GDSC Vice President and Treasurer</p>
+                <p className="ChangingText">Unicorn wrangler</p>
+                <p className="ChangingText">That was a lie</p>
+            </div>
         </div>
     </div>
     );

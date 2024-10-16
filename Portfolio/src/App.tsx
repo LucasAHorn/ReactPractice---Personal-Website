@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Landing from "./components/Landing";
 import AboutMe from "./components/AboutMe";
-import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/Projects";
 import ContactMe from "./components/ContactMe";
 import "./App.css";
 
