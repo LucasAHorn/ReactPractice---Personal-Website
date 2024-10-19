@@ -1,7 +1,7 @@
 div.Header {
     max-width: fit-content;
     margin-inline: auto;
-    border-radius: 5vw;
+    border-radius: 10vw;
 
     display: flex;
     flex-direction: row;
@@ -17,12 +17,13 @@ div.Header {
     border-style: solid;
     border-color: rgb(198, 228, 255);
     border-width: 0.1vh;
+    z-index: 999;
 }
 
 h2.PageSections {
     background-color: rgb(117, 191, 255);
     padding: 1vw;
-    border-radius: 2.5vw;
+    border-radius: 10vw;
     margin: 0.5vw;
     cursor: pointer;
     transition-duration: 0.4s;
