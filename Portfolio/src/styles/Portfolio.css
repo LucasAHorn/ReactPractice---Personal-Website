@@ -1,0 +1,97 @@
+.portfolio-section {
+  display: flex; /* Enable flexbox */
+  flex-direction: column; /* Align items in a column */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 2rem; /* Padding for the section */
+  height: 100vh; /* Full viewport height */
+  background-color: #eaf3e6; /* Slightly different soft light green background */
+  color: #4a6355; /* Darker green for the text */
+  text-align: center; /* Center text */
+}
+
+h1 {
+  margin-bottom: 1.5rem; /* Margin below the heading */
+  font-size: 2.5rem; /* Larger font size for the title */
+}
+
+a {
+  color: inherit; /* Inherit color from parent */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.portfolio-grid {
+  display: flex; /* Use flexbox for centering */
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Gap between cards */
+  margin-top: 2rem; /* Margin above the grid */
+}
+
+.card {
+  background-color: white; /* White background for cards */
+  border: 2px solid #8b9a6b; /* Earthy border color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  overflow: hidden; /* Prevent content overflow */
+  position: relative; /* For positioning inner elements */
+  transition: transform 0.3s; /* Smooth scaling on hover */
+  width: 350px; /* Increased width for cards */
+  padding: 1.5rem; /* Increased padding for larger cards */
+}
+
+.card:hover {
+  transform: scale(1.05); /* Scale up on hover for emphasis */
+}
+
+.card-content {
+  padding: 1rem; /* Padding inside the card */
+}
+
+.card-text {
+  position: relative; /* For positioning hover text */
+  color: #4a6355; /* Ensure card text has a set color */
+}
+
+.card-hover-text {
+  position: absolute; /* Position it absolutely within the card */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; /* Hide by default */
+  justify-content: center; /* Center text vertically and horizontally */
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.9); /* Light background for hover text */
+  padding: 1rem; /* Padding for hover text */
+  border-radius: 10px; /* Match card rounding */
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle inner shadow */
+}
+
+.card:hover .card-hover-text {
+  display: flex; /* Show on hover */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.card-text a {
+  color: inherit; /* Inherit color from .card-text to prevent altering text color */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem; /* Smaller heading on mobile */
+  }
+
+  .portfolio-grid {
+    gap: 15px; /* Reduced gap on smaller screens */
+  }
+
+  .card {
+    margin: 0; /* Remove margin for smaller screens */
+    width: 90%; /* Adjust card width for smaller screens */
+  }
+}

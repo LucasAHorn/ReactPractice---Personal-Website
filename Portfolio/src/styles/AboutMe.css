@@ -1,0 +1,105 @@
+.about-me-container {
+  display: flex;
+  justify-content: center; /* Centers both text and image */
+  align-items: center; /* Centers vertically */
+  padding: 0 10%; /* Padding on the sides */
+  height: 105vh; /* Slightly larger than full screen height */
+  background-color: #f2f7f2; /* Soft, light green background like nature */
+  color: #2d4739; /* Dark, earthy green for the text */
+}
+
+.about-me-left {
+  width: 40%; /* Adjust width as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: flex-start; /* Aligns the text to the left */
+  padding-right: 5%; /* Add some spacing between the text and image */
+}
+
+.about-me-right {
+  width: 50%; /* Increased width to make the image portion wider */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+}
+
+.profile-image {
+  width: 250px; /* Larger image */
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border: 5px solid #8b9a6b; /* Soft greenish-brown border like tree bark */
+}
+
+.resume-button-wrapper {
+  display: inline-block; /* Makes the anchor tag only as large as the button */
+}
+
+.resume-button {
+  background-color: #8b9a6b; /* Earthy green-brown color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center text inside the button */
+}
+
+.resume-button:hover {
+  background-color: #6d7a4f; /* Darker shade on hover */
+}
+
+.social-links {
+  display: flex;
+  gap: 25px; /* Larger gap for the icons */
+  margin-top: 20px;
+}
+
+.social-links a {
+  font-size: 32px; /* Larger icon size */
+  color: #2d4739; /* Dark green for the icons */
+}
+
+.social-links a:hover {
+  color: #8b9a6b; /* Earthy hover color for the icons */
+  text-decoration: none;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .about-me-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: auto; /* Allow height to adjust for smaller screens */
+  }
+
+  .about-me-left, .about-me-right {
+    width: 100%;
+  }
+
+  .profile-image {
+    width: 200px; /* Slightly smaller for mobile */
+    height: 200px;
+  }
+
+  .resume-button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .social-links {
+    gap: 20px; /* Adjust gap for smaller screens */
+  }
+
+  .social-links a {
+    font-size: 28px; /* Slightly smaller icons for mobile */
+  }
+}

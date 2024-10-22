@@ -1,0 +1,59 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Take up the full viewport height */
+    background-color: #f0f4f8; /* Soft light background */
+    color: #333; /* Dark gray text color for better readability */
+    font-family: 'Arial', sans-serif; /* Font style */
+    padding: 20px; /* Padding for the container */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Full width */
+    max-width: 600px; /* Maximum width for the form */
+    margin: 0 auto; /* Center the form */
+}
+
+label {
+    margin: 10px 0 5px; /* Margin around labels */
+    font-weight: bold; /* Bold labels for emphasis */
+}
+
+input, textarea {
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input {
+    background-color: #ffffff; /* White background for inputs */
+    color: #555; /* Dark gray text color */
+}
+
+textarea {
+    background-color: #ffffff; /* White background for textarea */
+    color: #555; /* Dark gray text color */
+    resize: vertical; /* Allow vertical resizing of the textarea */
+    min-height: 100px; /* Minimum height for textarea */
+}
+
+button {
+    padding: 10px 20px; /* Padding for button */
+    background-color: #6ca6c1; /* Soft blue button */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button */
+    transition: background-color 0.3s; /* Smooth transition for button color */
+}
+
+button:hover {
+    background-color: #5491a3; /* Slightly darker blue on hover */
+}

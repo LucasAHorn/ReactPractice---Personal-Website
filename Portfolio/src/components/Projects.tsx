@@ -1,12 +1,12 @@
 
 
-function Portfolio() {
+// function Projects() {
 
 
-    return (<>
+//     return (<>
     
-        <h1>Portfolio</h1>
+//         <h1>Portfolio</h1>
     
-    </>);
-}
-export default Portfolio;
+//     </>);
+// }
+// export default Projects;
