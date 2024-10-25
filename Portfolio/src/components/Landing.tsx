@@ -17,9 +17,9 @@ function Landing() {
 
 
             <div className="HorizontallyAligned">
-                <p className="ChangingText">Personal Projects</p>
                 <p className="ChangingText">Hackathons</p>
                 <p className="ChangingText">Club Involvement</p>
+                <p className="ChangingText">Personal Projects</p>
                 <p className="ChangingText">GDSC Vice President and Treasurer</p>
                 <p className="ChangingText">Unicorn wrangler</p>
                 <p className="ChangingText">That was a lie</p>

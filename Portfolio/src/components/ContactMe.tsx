@@ -22,16 +22,6 @@ function ContactMe() {
         <div className="contact-container">
             <h1>Contact Me</h1>
             <form onSubmit={handleSubmit} className="contact-form">
-                <label htmlFor="dad-joke">What's your best dad joke?</label>
-                <input
-                    type="text"
-                    id="dad-joke"
-                    value={joke}
-                    onChange={(e) => setJoke(e.target.value)}
-                    required
-                    placeholder="Type your dad joke here..."
-                />
-                
                 <label htmlFor="contact">Email or Phone Number:</label>
                 <input
                     type="text"
@@ -41,6 +31,16 @@ function ContactMe() {
                     required
                     placeholder="Your email or phone number"
                 />
+                <label htmlFor="dad-joke">What's your best joke? (Optional)</label>
+                <input
+                    type="text"
+                    id="dad-joke"
+                    value={joke}
+                    onChange={(e) => setJoke(e.target.value)}
+                    required
+                    placeholder="Type your joke here..."
+                />
+                
 
                 <label htmlFor="message">Your Message:</label>
                 <textarea

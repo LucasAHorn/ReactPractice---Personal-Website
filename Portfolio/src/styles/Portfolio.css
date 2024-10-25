@@ -4,7 +4,8 @@
   justify-content: center; /* Center vertically */
   align-items: center; /* Center horizontally */
   padding: 2rem; /* Padding for the section */
-  height: 100vh; /* Full viewport height */
+  min-height: 100vh; /* Full viewport height */
+  max-height: fit-content;
   background-color: #eaf3e6; /* Slightly different soft light green background */
   color: #4a6355; /* Darker green for the text */
   text-align: center; /* Center text */

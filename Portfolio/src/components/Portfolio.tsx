@@ -4,13 +4,13 @@ const projects = [
   {
     name: 'Playlist Transfer Tool',
     codeBase: ['Python', 'Typescript', 'React', 'Flask'],
-    description: 'A tool that transfers YouTube Music playlists to Spotify. Built using Node.js, Express, and the Spotify Web API.',
+    description: 'A tool that transfers YouTube Music playlists to Spotify built with members of the CSE club at ISU',
     githubLink: 'https://github.com/LucasAHorn/Playlist-Platform-Transfer-Project'
   },
   {
     name: 'Pet Prescription Tracker',
     codeBase: ['Javascript', 'React'],
-    description: 'A React application providing pet prescription information, utilizing the FDA Green Book. Awarded "Best Technical Build" at BuildDSM V1 Hackathon.',
+    description: 'A React application providing animal prescription information, utilizing the FDA Green Book. Awarded "Best Technical Build" at BuildDSM V1 Hackathon.',
     githubLink: 'https://github.com/nwfrank/builddsm'
   },
   {
@@ -22,7 +22,7 @@ const projects = [
   {
     name: 'Portfolio Website V2',
     codeBase: ['Typescript', 'CSS', 'React'],
-    description: 'Current iteration of my portfolio website (what you are viewing right now)',
+    description: 'Current iteration of my portfolio website, (what you are viewing right now)',
     githubLink: 'https://github.com/LucasAHorn/ReactPractice---Personal-Website',
   }
 
